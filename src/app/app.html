@@ -31,13 +31,13 @@
           {{ item.label }}
         </button>
 
-        <button (click)="scrollTo('contact-us')" class="btn btn-primary nav-cta">
+        <!-- <button (click)="scrollTo('contact-us')" class="btn btn-primary nav-cta">
           Plan Your Event
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
           </svg>
-        </button>
+        </button> -->
       </nav>
 
       <!-- Mobile Hamburger Toggle -->
@@ -65,49 +65,6 @@
     }
   </header>
 
-  <!-- HERO SECTION -->
-  <section id="hero" class="hero-section">
-    <div class="hero-glow-1"></div>
-    <div class="hero-glow-2"></div>
-    
-    <div class="hero-content">
-      <div class="badge-tag">
-        <span class="pulse-dot"></span>
-        FULL-SERVICE EVENT ORGANIZATION & PRODUCTION
-      </div>
-
-      <h1 class="hero-title">
-        Crafting Unforgettable <br />
-        <span class="gradient-text">Events & Experiences</span>
-      </h1>
-
-      <p class="hero-subtitle">
-        KODE is a premier event management and production company. We design, organize, and execute extraordinary corporate summits, brand activations, expos, and grand galas with flawless perfection.
-      </p>
-
-      <div class="hero-actions">
-        <button (click)="scrollTo('services')" class="btn btn-accent btn-lg">
-          Explore Event Services
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </button>
-        <button (click)="scrollTo('contact-us')" class="btn btn-outline btn-lg">
-          Connect With Us
-        </button>
-      </div>
-
-      <!-- Stats Grid -->
-      <div class="hero-stats grid-4">
-        <div *ngFor="let stat of stats" class="stat-card glass-card">
-          <span class="stat-number">{{ stat.number }}</span>
-          <span class="stat-label">{{ stat.label }}</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- SECTION 1: WHO WE ARE -->
   <section id="who-we-are" class="section">
     <div class="section-header">
@@ -120,27 +77,42 @@
 
     <div class="about-grid">
       <div class="about-card glass-card">
-        <div class="icon-wrapper">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        <div class="about-img-wrap">
+          <img src="about_passion_1788128946388.png" alt="Our Passion" class="about-img" />
+          <div class="about-img-overlay">
+            <span class="about-tag">Our Passion</span>
+          </div>
         </div>
-        <h3>Our Passion</h3>
-        <p>Creating unforgettable moments. From stage lighting and spatial design to seamless guest arrivals, we engineer every second for impact.</p>
+        <div class="about-body">
+          <h3>Our Passion</h3>
+          <p>Creating unforgettable moments. From stage lighting and spatial design to seamless guest arrivals, we engineer every second for impact.</p>
+        </div>
       </div>
 
       <div class="about-card glass-card">
-        <div class="icon-wrapper accent-purple">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        <div class="about-img-wrap">
+          <img src="about_turnkey_1788128958491.png" alt="Turnkey Management" class="about-img" />
+          <div class="about-img-overlay">
+            <span class="about-tag">Turnkey Management</span>
+          </div>
         </div>
-        <h3>Turnkey Management</h3>
-        <p>We take complete ownership of venue sourcing, vendor coordination, lighting & AV production, catering flows, and VIP hospitality.</p>
+        <div class="about-body">
+          <h3>Turnkey Management</h3>
+          <p>We take complete ownership of venue sourcing, vendor coordination, lighting & AV production, catering flows, and VIP hospitality.</p>
+        </div>
       </div>
 
       <div class="about-card glass-card">
-        <div class="icon-wrapper accent-cyan">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+        <div class="about-img-wrap">
+          <img src="about_guestflow_1788128972805.png" alt="Flawless Guest Flow" class="about-img" />
+          <div class="about-img-overlay">
+            <span class="about-tag">Flawless Guest Flow</span>
+          </div>
         </div>
-        <h3>Flawless Guest Flow</h3>
-        <p>Using advanced check-in systems, instant badge printing, and dedicated concierge teams to ensure effortless guest experiences.</p>
+        <div class="about-body">
+          <h3>Flawless Guest Flow</h3>
+          <p>Using advanced check-in systems, instant badge printing, and dedicated concierge teams to ensure effortless guest experiences.</p>
+        </div>
       </div>
     </div>
 
@@ -187,25 +159,24 @@
 
     <div class="services-grid">
       <div *ngFor="let service of services" class="service-card glass-card" (click)="openServiceModal(service)">
-        <div class="service-tag">{{ service.tag }}</div>
-        
-        <div class="service-icon-box">
-          <svg *ngIf="service.icon === 'award'" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-          <svg *ngIf="service.icon === 'sparkles'" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg>
-          <svg *ngIf="service.icon === 'music'" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
-          <svg *ngIf="service.icon === 'users'" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-          <svg *ngIf="service.icon === 'grid'" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-          <svg *ngIf="service.icon === 'video'" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+        <!-- Service Image -->
+        <div class="service-img-wrap">
+          <img [src]="service.image" [alt]="service.title" class="service-img" />
+          <div class="service-img-overlay">
+            <span class="service-tag">{{ service.tag }}</span>
+          </div>
         </div>
 
-        <h3 class="service-title">{{ service.title }}</h3>
-        <p class="service-desc">{{ service.shortDesc }}</p>
+        <div class="service-body">
+          <h3 class="service-title">{{ service.title }}</h3>
+          <p class="service-desc">{{ service.shortDesc }}</p>
 
-        <div class="service-footer">
-          <span class="learn-more">
-            View Service Details
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
+          <div class="service-footer">
+            <span class="learn-more">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </div>
         </div>
       </div>
     </div>
